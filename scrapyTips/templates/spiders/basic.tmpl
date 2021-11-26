@@ -1,0 +1,11 @@
+import scrapy
+from scrapy.http.response.html import HtmlResponse
+
+
+class $classname(scrapy.Spider):
+    name = '$name'
+    allowed_domains = ['$domain']
+    start_urls = ['http://$domain/']
+
+    def parse(self, response: HtmlResponse, **kwargs):
+        pass
